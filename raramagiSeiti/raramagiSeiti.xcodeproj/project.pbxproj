@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0D65B724A0832800F2A487 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D65B524A0827F00F2A487 /* MapKit.framework */; };
+		5D0D65B924A1C9B600F2A487 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D65B824A1C9B600F2A487 /* CoreLocation.framework */; };
+		5DECD4EB249C737E00357385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EA249C737E00357385 /* AppDelegate.swift */; };
+		5DECD4ED249C737E00357385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EC249C737E00357385 /* SceneDelegate.swift */; };
+		5DECD4EF249C737E00357385 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EE249C737E00357385 /* mapViewController.swift */; };
+		5DECD4F2249C737E00357385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F0249C737E00357385 /* Main.storyboard */; };
+		5DECD4F5249C737E00357385 /* raramagiSeiti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4F3249C737E00357385 /* raramagiSeiti.xcdatamodeld */; };
+		5DECD4F7249C738300357385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F6249C738300357385 /* Assets.xcassets */; };
+		5DECD4FA249C738300357385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F8249C738300357385 /* LaunchScreen.storyboard */; };
+		5DECD504249C813700357385 /* seitiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD503249C813700357385 /* seitiViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D0D65B524A0827F00F2A487 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5D0D65B824A1C9B600F2A487 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5DECD4E7249C737E00357385 /* ららマジ聖地.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ららマジ聖地.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DECD4EA249C737E00357385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DECD4EC249C737E00357385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DECD4EE249C737E00357385 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		5DECD4F1249C737E00357385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DECD4F4249C737E00357385 /* raramagiSeiti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = raramagiSeiti.xcdatamodel; sourceTree = "<group>"; };
+		5DECD4F6249C738300357385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DECD4F9249C738300357385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DECD4FB249C738300357385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DECD503249C813700357385 /* seitiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DECD4E4249C737E00357385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0D65B924A1C9B600F2A487 /* CoreLocation.framework in Frameworks */,
+				5D0D65B724A0832800F2A487 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D0D65B424A0827F00F2A487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D0D65B824A1C9B600F2A487 /* CoreLocation.framework */,
+				5D0D65B524A0827F00F2A487 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DECD4DE249C737E00357385 = {
+			isa = PBXGroup;
+			children = (
+				5DECD4E9249C737E00357385 /* raramagiSeiti */,
+				5DECD4E8249C737E00357385 /* Products */,
+				5D0D65B424A0827F00F2A487 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DECD4E8249C737E00357385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DECD4E7249C737E00357385 /* ららマジ聖地.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DECD4E9249C737E00357385 /* raramagiSeiti */ = {
+			isa = PBXGroup;
+			children = (
+				5DECD4EA249C737E00357385 /* AppDelegate.swift */,
+				5DECD4EC249C737E00357385 /* SceneDelegate.swift */,
+				5DECD503249C813700357385 /* seitiViewController.swift */,
+				5DECD4EE249C737E00357385 /* mapViewController.swift */,
+				5DECD4F0249C737E00357385 /* Main.storyboard */,
+				5DECD4F6249C738300357385 /* Assets.xcassets */,
+				5DECD4F8249C738300357385 /* LaunchScreen.storyboard */,
+				5DECD4FB249C738300357385 /* Info.plist */,
+				5DECD4F3249C737E00357385 /* raramagiSeiti.xcdatamodeld */,
+			);
+			path = raramagiSeiti;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DECD4E6249C737E00357385 /* raramagiSeiti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DECD4FE249C738300357385 /* Build configuration list for PBXNativeTarget "raramagiSeiti" */;
+			buildPhases = (
+				5DECD4E3249C737E00357385 /* Sources */,
+				5DECD4E4249C737E00357385 /* Frameworks */,
+				5DECD4E5249C737E00357385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = raramagiSeiti;
+			productName = raramagiSeiti;
+			productReference = 5DECD4E7249C737E00357385 /* ららマジ聖地.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DECD4DF249C737E00357385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "滝浪翔太";
+				TargetAttributes = {
+					5DECD4E6249C737E00357385 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5DECD4E2249C737E00357385 /* Build configuration list for PBXProject "raramagiSeiti" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DECD4DE249C737E00357385;
+			productRefGroup = 5DECD4E8249C737E00357385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DECD4E6249C737E00357385 /* raramagiSeiti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DECD4E5249C737E00357385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DECD4FA249C738300357385 /* LaunchScreen.storyboard in Resources */,
+				5DECD4F7249C738300357385 /* Assets.xcassets in Resources */,
+				5DECD4F2249C737E00357385 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DECD4E3249C737E00357385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DECD4F5249C737E00357385 /* raramagiSeiti.xcdatamodeld in Sources */,
+				5DECD504249C813700357385 /* seitiViewController.swift in Sources */,
+				5DECD4EF249C737E00357385 /* mapViewController.swift in Sources */,
+				5DECD4EB249C737E00357385 /* AppDelegate.swift in Sources */,
+				5DECD4ED249C737E00357385 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DECD4F0249C737E00357385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DECD4F1249C737E00357385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DECD4F8249C738300357385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DECD4F9249C738300357385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DECD4FC249C738300357385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DECD4FD249C738300357385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DECD4FF249C738300357385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BFQNC3WZZ;
+				INFOPLIST_FILE = raramagiSeiti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = on.yotubarail.raramagiSeiti;
+				PRODUCT_NAME = "ららマジ聖地";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DECD500249C738300357385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BFQNC3WZZ;
+				INFOPLIST_FILE = raramagiSeiti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = on.yotubarail.raramagiSeiti;
+				PRODUCT_NAME = "ららマジ聖地";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DECD4E2249C737E00357385 /* Build configuration list for PBXProject "raramagiSeiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DECD4FC249C738300357385 /* Debug */,
+				5DECD4FD249C738300357385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DECD4FE249C738300357385 /* Build configuration list for PBXNativeTarget "raramagiSeiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DECD4FF249C738300357385 /* Debug */,
+				5DECD500249C738300357385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DECD4F3249C737E00357385 /* raramagiSeiti.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DECD4F4249C737E00357385 /* raramagiSeiti.xcdatamodel */,
+			);
+			currentVersion = 5DECD4F4249C737E00357385 /* raramagiSeiti.xcdatamodel */;
+			path = raramagiSeiti.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5DECD4DF249C737E00357385 /* Project object */;
+}
