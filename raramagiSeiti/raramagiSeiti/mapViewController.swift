@@ -37,7 +37,11 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.delegate = self
         locationManager.delegate = self
         
-        // 東大和市内
+        
+        /*
+        東大和市内
+        */
+        
         // ピンを生成
         let higasiyamatosiStaPin = MKPointAnnotation()
         let botanicaiGardenPin = MKPointAnnotation()
@@ -83,17 +87,37 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.addAnnotation(tamakoPin)
         
         
-        // その他の地域
+        /*
+        その他の地域
+        */
+        
         let shoppingStreetPin = MKPointAnnotation()
+        let shoppingMallPin = MKPointAnnotation()
         
         shoppingStreetPin.coordinate = CLLocationCoordinate2DMake(35.661186, 139.667618)
+        shoppingMallPin.coordinate = CLLocationCoordinate2DMake(35.810184, 139.379533)
         
         shoppingStreetPin.title = "下北沢南商店街"
+        shoppingMallPin.title = "三井アウトレットパーク入間店"
         
         mapView.addAnnotation(shoppingStreetPin)
+        mapView.addAnnotation(shoppingMallPin)
         
     }
 
+    // CalloutAccessoryViewに詳細ボタンを追加
+    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+        for view in views {
+            view.rightCalloutAccessoryView = UIButton(type: UIButton.ButtonType.detailDisclosure)
+        }
+    }
+    
+    // CalloutAccessoryViewをタップしたときの処理
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        
+        performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
+    }
 
 }
 

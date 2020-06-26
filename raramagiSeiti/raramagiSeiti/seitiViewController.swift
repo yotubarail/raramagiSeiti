@@ -24,6 +24,8 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "聖地リスト"
 
         section1 = ["東大和市": higasiyamatoSeitiList]
         section2 = ["その他": otherSeitiList]
@@ -84,6 +86,7 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             case 0: tableView.deselectRow(at: indexPath, animated: true)
             print("東大和市駅をタップ")
+            performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
             
             case 1: tableView.deselectRow(at: indexPath, animated: true)
             print("東京都薬用植物園をタップ")
