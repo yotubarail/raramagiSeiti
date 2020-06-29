@@ -16,7 +16,6 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     let locationManager = CLLocationManager()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -114,8 +113,11 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     // CalloutAccessoryViewをタップしたときの処理
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
-        
+//        switch MKPointAnnotation() {
+//        case higasiyamatosiStaPin:
+//            performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
+//        default: break
+//        }
         performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
     }
 
