@@ -90,27 +90,35 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             case 1: tableView.deselectRow(at: indexPath, animated: true)
             print("東京都薬用植物園をタップ")
+            performSegue(withIdentifier: "botanicaiGarden", sender: nil)
             
             case 2: tableView.deselectRow(at: indexPath, animated: true)
             print("BIGBOX東大和をタップ")
+            performSegue(withIdentifier: "bigbox", sender: nil)
             
             case 3: tableView.deselectRow(at: indexPath, animated: true)
             print("旧日立航空機立川工場変電所をタップ")
+            performSegue(withIdentifier: "electrical", sender: nil)
             
             case 4: tableView.deselectRow(at: indexPath, animated: true)
             print("東大和市役所をタップ")
+            performSegue(withIdentifier: "cityHall", sender: nil)
             
             case 5: tableView.deselectRow(at: indexPath, animated: true)
             print("上北台駅をタップ")
+            performSegue(withIdentifier: "kamikitadaiSta", sender: nil)
             
             case 6: tableView.deselectRow(at: indexPath, animated: true)
             print("東大和市立郷土博物館をタップ")
+            performSegue(withIdentifier: "museum", sender: nil)
             
             case 7: tableView.deselectRow(at: indexPath, animated: true)
             print("氷川神社をタップ")
+            performSegue(withIdentifier: "shrine", sender: nil)
             
             case 8: tableView.deselectRow(at: indexPath, animated: true)
             print("多摩湖（村山貯水池）をタップ")
+            performSegue(withIdentifier: "tamako", sender: nil)
             
             default: break
             }

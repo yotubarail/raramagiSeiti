@@ -42,15 +42,15 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         */
         
         // ピンを生成
-        let higasiyamatosiStaPin = MKPointAnnotation()
-        let botanicaiGardenPin = MKPointAnnotation()
-        let bigboxPin = MKPointAnnotation()
-        let electricalPin = MKPointAnnotation()
-        let cityHallPin = MKPointAnnotation()
-        let kamikitadaiStaPin = MKPointAnnotation()
-        let museumPin = MKPointAnnotation()
-        let shrinePin = MKPointAnnotation()
-        let tamakoPin = MKPointAnnotation()
+        let higasiyamatosiStaPin = MyPointAnnotation()
+        let botanicaiGardenPin = MyPointAnnotation()
+        let bigboxPin = MyPointAnnotation()
+        let electricalPin = MyPointAnnotation()
+        let cityHallPin = MyPointAnnotation()
+        let kamikitadaiStaPin = MyPointAnnotation()
+        let museumPin = MyPointAnnotation()
+        let shrinePin = MyPointAnnotation()
+        let tamakoPin = MyPointAnnotation()
         
         // ピンの座標設定
         higasiyamatosiStaPin.coordinate = CLLocationCoordinate2DMake(35.733017, 139.434828)
@@ -73,6 +73,18 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         museumPin.title = "東大和市立郷土博物館"
         shrinePin.title = "氷川神社"
         tamakoPin.title = "多摩湖"
+        
+        // identifierの設定
+        higasiyamatosiStaPin.identifier = "gohigasiyamatosiSta"
+        botanicaiGardenPin.identifier = "gobotanicaiGarden"
+        bigboxPin.identifier = "gobigbox"
+        electricalPin.identifier = "goelectrical"
+        cityHallPin.identifier = "gocityHall"
+        kamikitadaiStaPin.identifier = "gokamikitadaiSta"
+        museumPin.identifier = "gomuseum"
+        shrinePin.identifier = "goshrine"
+        tamakoPin.identifier = "gotamako"
+        
 
         // mapViewにピンを追加
         mapView.addAnnotation(higasiyamatosiStaPin)
@@ -90,8 +102,8 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         その他の地域
         */
         
-        let shoppingStreetPin = MKPointAnnotation()
-        let shoppingMallPin = MKPointAnnotation()
+        let shoppingStreetPin = MyPointAnnotation()
+        let shoppingMallPin = MyPointAnnotation()
         
         shoppingStreetPin.coordinate = CLLocationCoordinate2DMake(35.661186, 139.667618)
         shoppingMallPin.coordinate = CLLocationCoordinate2DMake(35.810184, 139.379533)
@@ -106,6 +118,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     // CalloutAccessoryViewに詳細ボタンを追加
     func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+
         for view in views {
             view.rightCalloutAccessoryView = UIButton(type: UIButton.ButtonType.detailDisclosure)
         }
@@ -113,13 +126,50 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     // CalloutAccessoryViewをタップしたときの処理
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//        switch MKPointAnnotation() {
-//        case higasiyamatosiStaPin:
-//            performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
-//        default: break
-//        }
-        performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
+        
+        if view.annotation is MKUserLocation {
+            
+            return
+        } else {
+            let seitiAnnotation:MyPointAnnotation = (view.annotation as? MyPointAnnotation)!
+            
+            switch seitiAnnotation.identifier{
+                
+            case "gohigasiyamatosiSta":
+                performSegue(withIdentifier: "higasiyamatosiSta", sender: nil)
+            
+            case "gobotanicaiGarden":
+                performSegue(withIdentifier: "botanicaiGarden", sender: nil)
+            
+            case "gobigbox":
+                performSegue(withIdentifier: "bigbox", sender: nil)
+            
+            case "goelectrical":
+                performSegue(withIdentifier: "electrical", sender: nil)
+            
+            case "gocityHall":
+                performSegue(withIdentifier: "cityHall", sender: nil)
+            
+            case "gokamikitadaiSta":
+                performSegue(withIdentifier: "kamikitadaiSta", sender: nil)
+                    
+            case "gomuseum":
+                performSegue(withIdentifier: "museum", sender: nil)
+            
+            case "goshrine":
+                performSegue(withIdentifier: "shrine", sender: nil)
+            
+            case "gotamako":
+                performSegue(withIdentifier: "tamako", sender: nil)
+            
+            default: break
+            }
+        }
     }
 
+}
+
+class MyPointAnnotation : MKPointAnnotation {
+    var identifier: String?
 }
 
