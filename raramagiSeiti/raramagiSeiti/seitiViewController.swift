@@ -14,7 +14,7 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var listTableView: UITableView!
     
     let higasiyamatoSeitiList: NSMutableArray = ["東大和市駅", "東京都薬用植物園", "BIGBOX東大和", "旧日立航空機立川工場変電所", "東大和市役所", "上北台駅", "東大和市立郷土博物館", "氷川神社", "多摩湖（村山貯水池）"]
-    let otherSeitiList: NSMutableArray = ["下北沢南商店街"]
+    let otherSeitiList: NSMutableArray = ["下北沢南口商店街"]
     
     var listImg: Array<UIImage> = []
 
@@ -128,7 +128,8 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
         case 1: switch indexPath.row {
             
             case 0: tableView.deselectRow(at: indexPath, animated: true)
-            print("下北沢南商店街をタップ")
+            print("下北沢南口商店街をタップ")
+            performSegue(withIdentifier: "shoppingStreet", sender: nil)
             
             case 1: tableView.deselectRow(at: indexPath, animated: true)
 

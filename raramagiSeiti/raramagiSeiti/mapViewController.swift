@@ -22,6 +22,8 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // 位置情報使用の通知を表示
         locationManager.requestAlwaysAuthorization()
         
+        mapView.userLocation.title = "現在地"
+        
         // 地図の真ん中を決める
         let centerLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.747744, 139.429784)
         mapView.setCenter(centerLocation, animated: true)
@@ -108,8 +110,11 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         shoppingStreetPin.coordinate = CLLocationCoordinate2DMake(35.661186, 139.667618)
         shoppingMallPin.coordinate = CLLocationCoordinate2DMake(35.810184, 139.379533)
         
-        shoppingStreetPin.title = "下北沢南商店街"
-        shoppingMallPin.title = "三井アウトレットパーク入間店"
+        shoppingStreetPin.title = "下北沢南口商店街"
+        shoppingMallPin.title = "三井アウトレットパーク入間"
+        
+        shoppingStreetPin.identifier = "goshoppingStreet"
+        shoppingMallPin.identifier = "goshoppingMall"
         
         mapView.addAnnotation(shoppingStreetPin)
         mapView.addAnnotation(shoppingMallPin)
@@ -118,7 +123,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     // CalloutAccessoryViewに詳細ボタンを追加
     func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
-
+        
         for view in views {
             view.rightCalloutAccessoryView = UIButton(type: UIButton.ButtonType.detailDisclosure)
         }
@@ -128,7 +133,6 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         if view.annotation is MKUserLocation {
-            
             return
         } else {
             let seitiAnnotation:MyPointAnnotation = (view.annotation as? MyPointAnnotation)!
@@ -161,6 +165,12 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             case "gotamako":
                 performSegue(withIdentifier: "tamako", sender: nil)
+                
+            case "goshoppingStreet":
+                performSegue(withIdentifier: "shoppingStreet", sender: nil)
+                
+            case "goshoppingMall":
+                performSegue(withIdentifier: "shoppingMall", sender: nil)
             
             default: break
             }

@@ -35,6 +35,8 @@
                         <segue destination="AOP-nS-lG8" kind="presentation" identifier="kamikitadaiSta" id="fuV-09-7Td"/>
                         <segue destination="4OO-Nl-TkZ" kind="presentation" identifier="museum" id="y2D-VI-rMJ"/>
                         <segue destination="3Jw-gl-Y7i" kind="presentation" identifier="tamako" id="PI0-Tb-pbf"/>
+                        <segue destination="emj-Np-BO1" kind="presentation" identifier="shoppingStreet" id="yDX-vP-3n6"/>
+                        <segue destination="jWR-Dd-Iy5" kind="presentation" identifier="shoppingMall" id="SrS-rN-Rxm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2T-9l-lem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,8 +54,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="iRm-f0-D6C">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="q4W-PT-xu5">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4W-PT-xu5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QD-ZF-2vm">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -120,8 +123,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="chH-8c-LB7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-yR-JKf">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-yR-JKf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Q-TS-U1u">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -186,8 +190,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-HZ-OLB">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-nV-NiA">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-nV-NiA">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-Mm-uuJ">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -256,8 +261,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="lkS-Kp-2wV">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="5zs-fM-7Or">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zs-fM-7Or">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCt-YK-cue">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -324,8 +330,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="dxl-yp-Tvc">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="oAU-j7-CRZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAU-j7-CRZ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAk-Nm-g9A">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -392,11 +399,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-EE-iJP">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="QnD-nO-aze">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti05" translatesAutoresizingMaskIntoConstraints="NO" id="QnD-nO-aze">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="492.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-RP-3eN">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="525" width="414" height="73.5"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="5lH-TI-qMJ"/>
@@ -462,8 +470,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-BX-GP3">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-Q6-O3L">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-Q6-O3L">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-VL-Ncg">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -530,8 +539,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-EC-jUc">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="77S-3n-eVZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77S-3n-eVZ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-yr-djO">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -540,7 +550,7 @@
                                             <constraint firstAttribute="height" constant="73.5" id="vrd-Ox-GKF"/>
                                         </constraints>
                                         <string key="text">狭山自然公園内にある神社
-東奏大華火祭ではここから花火が見えるようだ</string>
+東奏大華火祭ではここから花火が見える</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -598,8 +608,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="No9-eC-OQg">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti00" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-3x-Ci6">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-3x-Ci6">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EJ-EM-X3X">
                                         <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
@@ -654,6 +665,144 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYS-vA-sCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2454" y="5129"/>
+        </scene>
+        <!--Shopping Street View Controller-->
+        <scene sceneID="Hrk-Mh-MBt">
+            <objects>
+                <viewController id="emj-Np-BO1" customClass="shoppingStreetViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5rt-u5-17J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Lq-8Vw">
+                                <rect key="frame" x="0.0" y="85" width="414" height="726"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti10" translatesAutoresizingMaskIntoConstraints="NO" id="OQa-g1-cWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="492.5"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-5I-yHX">
+                                        <rect key="frame" x="0.0" y="525" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73.5" id="i5v-9F-BK1"/>
+                                        </constraints>
+                                        <string key="text">音楽の街、下北沢の商店街
+器楽部員は東奏商店街で食品や日用品を買い揃えることが多いようだ</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKh-au-yAN">
+                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="lo4-UO-yMS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-4o-dit">
+                                        <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86.5" id="L0r-OZ-9mD"/>
+                                        </constraints>
+                                        <string key="text">・ホーム画面
+・イベントストーリー多数</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ccG-5I-yHX" firstAttribute="top" secondItem="OQa-g1-cWd" secondAttribute="bottom" constant="32.5" id="mFc-bt-Zi0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FJT-yv-quw" firstAttribute="top" secondItem="rUB-Lq-8Vw" secondAttribute="top" constant="3" id="6cU-9L-kOe"/>
+                            <constraint firstItem="FJT-yv-quw" firstAttribute="bottom" secondItem="rUB-Lq-8Vw" secondAttribute="bottom" constant="2" id="owM-69-pfh"/>
+                            <constraint firstItem="rUB-Lq-8Vw" firstAttribute="leading" secondItem="FJT-yv-quw" secondAttribute="leading" id="qPQ-md-NUu"/>
+                            <constraint firstAttribute="trailing" secondItem="rUB-Lq-8Vw" secondAttribute="trailing" id="sa2-ed-IFE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJT-yv-quw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bwj-4q-zeB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWj-1A-kzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="5829"/>
+        </scene>
+        <!--Shopping Mall View Controller-->
+        <scene sceneID="8Ro-eK-PlS">
+            <objects>
+                <viewController id="jWR-Dd-Iy5" customClass="shoppingMallViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSe-e9-eQh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="mXx-su-nHp">
+                                <rect key="frame" x="0.0" y="85" width="414" height="726"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fsK-Db-HGE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-eD-xAx">
+                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73.5" id="zeP-Ht-qRB"/>
+                                        </constraints>
+                                        <string key="text">複合商業施設
+器楽部員は雑貨や洋服を買いに来る</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd1-er-z6R">
+                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="f1D-X4-pU7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-bB-1oM">
+                                        <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86.5" id="EW0-nz-jXb"/>
+                                        </constraints>
+                                        <string key="text">・イベントストーリー『東奏マーチングパレード』
+・卯月幸誕生日限定ストーリー</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YOX-eD-xAx" firstAttribute="top" secondItem="fsK-Db-HGE" secondAttribute="bottom" constant="32.5" id="cTI-8p-oiC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mXx-su-nHp" firstAttribute="leading" secondItem="qSe-e9-eQh" secondAttribute="leading" id="Buf-JY-9ol"/>
+                            <constraint firstItem="Rt4-MQ-jV8" firstAttribute="top" secondItem="mXx-su-nHp" secondAttribute="top" constant="3" id="Ofq-6M-Cjf"/>
+                            <constraint firstAttribute="trailing" secondItem="mXx-su-nHp" secondAttribute="trailing" id="TYe-Hh-2ey"/>
+                            <constraint firstItem="Rt4-MQ-jV8" firstAttribute="bottom" secondItem="mXx-su-nHp" secondAttribute="bottom" constant="2" id="ff8-eg-BVe"/>
+                            <constraint firstItem="mXx-su-nHp" firstAttribute="leading" secondItem="Rt4-MQ-jV8" secondAttribute="leading" id="pNJ-bD-qUg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rt4-MQ-jV8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w3d-h0-QPw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODC-uQ-1Ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="6516"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Fbw-uG-Trl">
@@ -730,6 +879,8 @@
                         <segue destination="4OO-Nl-TkZ" kind="show" identifier="museum" id="lE5-nZ-dbX"/>
                         <segue destination="P2d-WK-ftr" kind="show" identifier="shrine" id="dNb-hO-3dc"/>
                         <segue destination="3Jw-gl-Y7i" kind="show" identifier="tamako" id="jMp-z4-L2o"/>
+                        <segue destination="emj-Np-BO1" kind="show" identifier="shoppingStreet" id="VEL-R1-tIs"/>
+                        <segue destination="jWR-Dd-Iy5" kind="show" identifier="shoppingMall" id="Cmp-yP-ZdL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABH-Bq-Hdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -738,6 +889,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Cmp-yP-ZdL"/>
+        <segue reference="VEL-R1-tIs"/>
         <segue reference="jMp-z4-L2o"/>
         <segue reference="dNb-hO-3dc"/>
         <segue reference="lE5-nZ-dbX"/>
@@ -750,7 +903,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="seiti00" width="640" height="426"/>
+        <image name="seiti05" width="600" height="600"/>
+        <image name="seiti10" width="600" height="600"/>
         <image name="table" catalog="system" width="128" height="93"/>
     </resources>
 </document>
