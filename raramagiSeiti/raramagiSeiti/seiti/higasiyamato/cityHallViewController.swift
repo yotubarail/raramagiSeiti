@@ -1,8 +1,8 @@
 //
-//  cityhallViewController.swift
+//  cityHallViewController.swift
 //  raramagiSeiti
 //
-//  Created by 滝浪翔太 on 2020/07/01.
+//  Created by 滝浪翔太 on 2020/07/02.
 //  Copyright © 2020 滝浪翔太. All rights reserved.
 //
 
