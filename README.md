@@ -6,6 +6,6 @@
 どんな聖地があるのか一覧で見ることができます。
 
 ## マップページ
-<img src="https://raw.githubusercontent.com/yotubarail/raramagiSeiti/master/IMG_8236.png" width="50%">
+<img src="https://raw.githubusercontent.com/yotubarail/raramagiSeiti/master/IMG_8236.PNG" width="50%">
 マップでどこに聖地があるのかを確認できます。<br>
 現在地の取得もしているため、自分がいる場所から聖地までどのように向かえば良いかわかります。
