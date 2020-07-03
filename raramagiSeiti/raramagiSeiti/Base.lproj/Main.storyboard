@@ -107,6 +107,12 @@
                         <viewLayoutGuide key="safeArea" id="4jG-CJ-Nam"/>
                     </view>
                     <navigationItem key="navigationItem" id="0pW-8m-H2V"/>
+                    <connections>
+                        <outlet property="higasiyamatosiStaImg" destination="q4W-PT-xu5" id="FT1-cI-ARQ"/>
+                        <outlet property="higasiyamatosiStaLbl" destination="los-FM-hTf" id="LsD-lO-voW"/>
+                        <outlet property="higasiyamatosiStaStory" destination="ulw-uc-3jp" id="OtR-Yj-hOI"/>
+                        <outlet property="higasiyamatosiStaTxt" destination="6QD-ZF-2vm" id="pej-2H-1Re"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNq-rn-kPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +180,12 @@
                         <viewLayoutGuide key="safeArea" id="aX1-vn-ZOG"/>
                     </view>
                     <navigationItem key="navigationItem" id="b9y-wF-MBE"/>
+                    <connections>
+                        <outlet property="botanicalGardenImg" destination="9xi-yR-JKf" id="ae2-eS-P5i"/>
+                        <outlet property="botanicalGardenLbl" destination="IqK-v6-yGj" id="pcs-Of-oYk"/>
+                        <outlet property="botanicalGardenStory" destination="2lr-fQ-r4U" id="lxt-Kh-g23"/>
+                        <outlet property="botanicalGardenTxt" destination="g5Q-TS-U1u" id="8UG-aV-eQw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SX7-bl-Lsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,6 +257,12 @@
                         <viewLayoutGuide key="safeArea" id="NAf-1g-dNM"/>
                     </view>
                     <navigationItem key="navigationItem" id="7RM-wv-0ah"/>
+                    <connections>
+                        <outlet property="bigboxImg" destination="Ash-nV-NiA" id="qVS-7s-Qkx"/>
+                        <outlet property="bigboxLbl" destination="cPA-A4-6f8" id="GN7-uB-YgJ"/>
+                        <outlet property="bigboxStory" destination="4i2-Wj-so1" id="moD-lH-a0i"/>
+                        <outlet property="bigboxTxt" destination="Ego-Mm-uuJ" id="6en-hE-tLE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AzV-Ia-kva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,6 +332,12 @@
                         <viewLayoutGuide key="safeArea" id="vNo-uA-LMh"/>
                     </view>
                     <navigationItem key="navigationItem" id="lH4-8m-FVV"/>
+                    <connections>
+                        <outlet property="electricalImg" destination="5zs-fM-7Or" id="gLf-ul-AdY"/>
+                        <outlet property="electricalLbl" destination="Pbg-8L-VMT" id="Jbi-8u-jMs"/>
+                        <outlet property="electricalStory" destination="bCa-Yb-Xe2" id="uz7-U9-Ycx"/>
+                        <outlet property="electricalTxt" destination="RCt-YK-cue" id="nkG-He-y3u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2p-af-BBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,6 +407,12 @@
                         <viewLayoutGuide key="safeArea" id="HOn-cu-ljy"/>
                     </view>
                     <navigationItem key="navigationItem" id="I7H-Q3-ha9"/>
+                    <connections>
+                        <outlet property="cityHallImg" destination="oAU-j7-CRZ" id="Ggh-r8-ZCr"/>
+                        <outlet property="cityHallLbl" destination="ici-Mm-uPt" id="pVc-RD-YUt"/>
+                        <outlet property="cityHallStory" destination="gV8-3f-9UQ" id="GA7-M3-IaX"/>
+                        <outlet property="cityHallTxt" destination="fAk-Nm-g9A" id="A6O-Vi-4Gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzW-0f-d6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -454,6 +484,12 @@
                         <viewLayoutGuide key="safeArea" id="7up-CW-e1z"/>
                     </view>
                     <navigationItem key="navigationItem" id="W2c-ml-Z2k"/>
+                    <connections>
+                        <outlet property="kamikitadaiStaImg" destination="QnD-nO-aze" id="xRZ-CY-9ye"/>
+                        <outlet property="kamikitadaiStaLbl" destination="EBy-6k-eOx" id="kcQ-Xs-RXN"/>
+                        <outlet property="kamikitadaiStaStory" destination="mwL-KJ-m1M" id="NHU-Fn-LaM"/>
+                        <outlet property="kamikitadaiStaTxt" destination="sFk-RP-3eN" id="5qu-8U-dSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlR-b2-Ofz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,6 +559,12 @@
                         <viewLayoutGuide key="safeArea" id="vR4-Yw-2sG"/>
                     </view>
                     <navigationItem key="navigationItem" id="71p-lx-wDd"/>
+                    <connections>
+                        <outlet property="museumImg" destination="Lfw-Q6-O3L" id="BI4-Dm-tLR"/>
+                        <outlet property="museumLbl" destination="0ab-jz-u0x" id="6cZ-7j-r1F"/>
+                        <outlet property="museumStory" destination="RR6-cx-Mzk" id="Bl9-YL-RBe"/>
+                        <outlet property="museumTxt" destination="dhr-VL-Ncg" id="U0X-oc-NpQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBY-OX-xH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,6 +634,12 @@
                         <viewLayoutGuide key="safeArea" id="UBv-OA-7zi"/>
                     </view>
                     <navigationItem key="navigationItem" id="B21-We-qDv"/>
+                    <connections>
+                        <outlet property="shrineImg" destination="77S-3n-eVZ" id="dUq-zv-rwX"/>
+                        <outlet property="shrineLbl" destination="xIN-9v-5OT" id="c9x-mK-gDM"/>
+                        <outlet property="shrineStory" destination="FdV-Db-lih" id="ikf-8n-PlJ"/>
+                        <outlet property="shrineTxt" destination="Fhf-yr-djO" id="eCg-6S-k19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yzy-DT-iEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -661,6 +709,12 @@
                         <viewLayoutGuide key="safeArea" id="uy2-tB-qqP"/>
                     </view>
                     <navigationItem key="navigationItem" id="XN7-WF-act"/>
+                    <connections>
+                        <outlet property="tamakoImg" destination="e2W-3x-Ci6" id="Vdf-rm-gcW"/>
+                        <outlet property="tamakoLbl" destination="yPL-ux-by7" id="TUg-AF-gOh"/>
+                        <outlet property="tamakoStory" destination="QaA-CI-h6a" id="m4G-lV-8kK"/>
+                        <outlet property="tamakoTxt" destination="5EJ-EM-X3X" id="UwT-KH-kE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYS-vA-sCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -729,6 +783,12 @@
                         <viewLayoutGuide key="safeArea" id="FJT-yv-quw"/>
                     </view>
                     <navigationItem key="navigationItem" id="bwj-4q-zeB"/>
+                    <connections>
+                        <outlet property="shoppingStreetImg" destination="OQa-g1-cWd" id="8YI-Sv-d4N"/>
+                        <outlet property="shoppingStreetLbl" destination="NKh-au-yAN" id="iSs-8O-y8e"/>
+                        <outlet property="shoppingStreetStory" destination="vqa-4o-dit" id="J4H-QD-fzZ"/>
+                        <outlet property="shoppingStreetTxt" destination="ccG-5I-yHX" id="HnW-hf-htK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWj-1A-kzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -799,6 +859,12 @@
                         <viewLayoutGuide key="safeArea" id="Rt4-MQ-jV8"/>
                     </view>
                     <navigationItem key="navigationItem" id="w3d-h0-QPw"/>
+                    <connections>
+                        <outlet property="shoppingMallImg" destination="fsK-Db-HGE" id="kE9-dM-uS0"/>
+                        <outlet property="shoppingMallLbl" destination="Jd1-er-z6R" id="X2W-CH-rFi"/>
+                        <outlet property="shoppingMallStory" destination="Vo1-bB-1oM" id="b7k-76-O5L"/>
+                        <outlet property="shoppingMallTxt" destination="YOX-eD-xAx" id="Emx-fk-ubx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODC-uQ-1Ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
