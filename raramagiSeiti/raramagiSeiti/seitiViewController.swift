@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SwiftUI
 
 class seitiViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     
     
     @IBOutlet weak var listTableView: UITableView!
@@ -158,5 +160,11 @@ class seitiViewController: UIViewController, UITableViewDataSource, UITableViewD
 
         return headerView
     }
+    
+    
+    @IBAction func goConfig(_ sender: Any) {
+        self.present(UIHostingController(rootView: configView()), animated: true)
+    }
+    
 
 }

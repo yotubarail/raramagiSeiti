@@ -21,6 +21,7 @@
 		5D0D65E724AD649400F2A487 /* shoppingStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E624AD649300F2A487 /* shoppingStreetViewController.swift */; };
 		5D0D65E924AD64F600F2A487 /* shoppingMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E824AD64F600F2A487 /* shoppingMallViewController.swift */; };
 		5D0D65EB24AD79F800F2A487 /* cityHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65EA24AD79F800F2A487 /* cityHallViewController.swift */; };
+		5D69FA0B24C5670A005C16C7 /* configView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FA0A24C5670A005C16C7 /* configView.swift */; };
 		5DECD4EB249C737E00357385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EA249C737E00357385 /* AppDelegate.swift */; };
 		5DECD4ED249C737E00357385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EC249C737E00357385 /* SceneDelegate.swift */; };
 		5DECD4EF249C737E00357385 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EE249C737E00357385 /* mapViewController.swift */; };
@@ -46,6 +47,7 @@
 		5D0D65E624AD649300F2A487 /* shoppingStreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoppingStreetViewController.swift; sourceTree = "<group>"; };
 		5D0D65E824AD64F600F2A487 /* shoppingMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoppingMallViewController.swift; sourceTree = "<group>"; };
 		5D0D65EA24AD79F800F2A487 /* cityHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityHallViewController.swift; sourceTree = "<group>"; };
+		5D69FA0A24C5670A005C16C7 /* configView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configView.swift; sourceTree = "<group>"; };
 		5DECD4E7249C737E00357385 /* raramagiSeiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raramagiSeiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DECD4EA249C737E00357385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DECD4EC249C737E00357385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				5DECD4EC249C737E00357385 /* SceneDelegate.swift */,
 				5DECD503249C813700357385 /* seitiViewController.swift */,
 				5DECD4EE249C737E00357385 /* mapViewController.swift */,
+				5D69FA0A24C5670A005C16C7 /* configView.swift */,
 				5DECD4F0249C737E00357385 /* Main.storyboard */,
 				5D0D65D524AAD44500F2A487 /* seiti */,
 				5DECD4F6249C738300357385 /* Assets.xcassets */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0D65EB24AD79F800F2A487 /* cityHallViewController.swift in Sources */,
+				5D69FA0B24C5670A005C16C7 /* configView.swift in Sources */,
 				5D0D65E924AD64F600F2A487 /* shoppingMallViewController.swift in Sources */,
 				5D0D65DF24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift in Sources */,
 				5DECD4F5249C737E00357385 /* raramagiSeiti.xcdatamodeld in Sources */,
