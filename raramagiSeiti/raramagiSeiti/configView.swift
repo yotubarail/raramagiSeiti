@@ -9,9 +9,8 @@
 import SwiftUI
 import WebKit
 
+
 struct configView: View {
-    
-    @State private var showingMailView = false
     
     var body: some View {
         NavigationView {
@@ -23,8 +22,11 @@ struct configView: View {
                 .listStyle(GroupedListStyle())
                 Spacer()
                 Text("下にスワイプして閉じる")
+                    .font(.system(size: 20))
                 Spacer()
-                Text("↓")
+                Image(systemName: "arrow.down")
+                    .frame(height: 100)
+                Spacer()
             }
             .navigationBarTitle("設定")
         }
