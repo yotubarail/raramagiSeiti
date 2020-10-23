@@ -10,54 +10,54 @@
 		5D0D65B724A0832800F2A487 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D65B524A0827F00F2A487 /* MapKit.framework */; };
 		5D0D65B924A1C9B600F2A487 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D65B824A1C9B600F2A487 /* CoreLocation.framework */; };
 		5D0D65CD24A430CE00F2A487 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D65CC24A430CE00F2A487 /* Settings.bundle */; };
-		5D0D65D224A5896700F2A487 /* higasiyamatosiStaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D124A5896700F2A487 /* higasiyamatosiStaViewController.swift */; };
-		5D0D65D424AAC94700F2A487 /* botanicalGardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D324AAC94700F2A487 /* botanicalGardenViewController.swift */; };
-		5D0D65D724AAD4B700F2A487 /* bigboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D624AAD4B700F2A487 /* bigboxViewController.swift */; };
-		5D0D65DB24AC1C7900F2A487 /* electricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65DA24AC1C7900F2A487 /* electricalViewController.swift */; };
-		5D0D65DF24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65DE24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift */; };
-		5D0D65E124AC1CC000F2A487 /* museumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E024AC1CC000F2A487 /* museumViewController.swift */; };
-		5D0D65E324AC1CD100F2A487 /* shrineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E224AC1CD100F2A487 /* shrineViewController.swift */; };
-		5D0D65E524AC1CE000F2A487 /* tamakoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E424AC1CE000F2A487 /* tamakoViewController.swift */; };
-		5D0D65E724AD649400F2A487 /* shoppingStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E624AD649300F2A487 /* shoppingStreetViewController.swift */; };
-		5D0D65E924AD64F600F2A487 /* shoppingMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E824AD64F600F2A487 /* shoppingMallViewController.swift */; };
-		5D0D65EB24AD79F800F2A487 /* cityHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65EA24AD79F800F2A487 /* cityHallViewController.swift */; };
-		5D69FA0B24C5670A005C16C7 /* configView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FA0A24C5670A005C16C7 /* configView.swift */; };
+		5D0D65D224A5896700F2A487 /* HigasiyamatosiStaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D124A5896700F2A487 /* HigasiyamatosiStaViewController.swift */; };
+		5D0D65D424AAC94700F2A487 /* BotanicalGardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D324AAC94700F2A487 /* BotanicalGardenViewController.swift */; };
+		5D0D65D724AAD4B700F2A487 /* BigboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65D624AAD4B700F2A487 /* BigboxViewController.swift */; };
+		5D0D65DB24AC1C7900F2A487 /* ElectricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65DA24AC1C7900F2A487 /* ElectricalViewController.swift */; };
+		5D0D65DF24AC1CAE00F2A487 /* KamikitadaiStaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65DE24AC1CAE00F2A487 /* KamikitadaiStaViewController.swift */; };
+		5D0D65E124AC1CC000F2A487 /* MuseumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E024AC1CC000F2A487 /* MuseumViewController.swift */; };
+		5D0D65E324AC1CD100F2A487 /* ShrineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E224AC1CD100F2A487 /* ShrineViewController.swift */; };
+		5D0D65E524AC1CE000F2A487 /* TamakoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E424AC1CE000F2A487 /* TamakoViewController.swift */; };
+		5D0D65E724AD649400F2A487 /* ShoppingStreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E624AD649300F2A487 /* ShoppingStreetViewController.swift */; };
+		5D0D65E924AD64F600F2A487 /* ShoppingMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65E824AD64F600F2A487 /* ShoppingMallViewController.swift */; };
+		5D0D65EB24AD79F800F2A487 /* CityHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D65EA24AD79F800F2A487 /* CityHallViewController.swift */; };
+		5D69FA0B24C5670A005C16C7 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FA0A24C5670A005C16C7 /* ConfigView.swift */; };
 		5DECD4EB249C737E00357385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EA249C737E00357385 /* AppDelegate.swift */; };
 		5DECD4ED249C737E00357385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EC249C737E00357385 /* SceneDelegate.swift */; };
-		5DECD4EF249C737E00357385 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EE249C737E00357385 /* mapViewController.swift */; };
+		5DECD4EF249C737E00357385 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4EE249C737E00357385 /* MapViewController.swift */; };
 		5DECD4F2249C737E00357385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F0249C737E00357385 /* Main.storyboard */; };
 		5DECD4F5249C737E00357385 /* raramagiSeiti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD4F3249C737E00357385 /* raramagiSeiti.xcdatamodeld */; };
 		5DECD4F7249C738300357385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F6249C738300357385 /* Assets.xcassets */; };
 		5DECD4FA249C738300357385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DECD4F8249C738300357385 /* LaunchScreen.storyboard */; };
-		5DECD504249C813700357385 /* seitiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD503249C813700357385 /* seitiViewController.swift */; };
+		5DECD504249C813700357385 /* SeitiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECD503249C813700357385 /* SeitiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D0D65B524A0827F00F2A487 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5D0D65B824A1C9B600F2A487 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5D0D65CC24A430CE00F2A487 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		5D0D65D124A5896700F2A487 /* higasiyamatosiStaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = higasiyamatosiStaViewController.swift; sourceTree = "<group>"; };
-		5D0D65D324AAC94700F2A487 /* botanicalGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botanicalGardenViewController.swift; sourceTree = "<group>"; };
-		5D0D65D624AAD4B700F2A487 /* bigboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigboxViewController.swift; sourceTree = "<group>"; };
-		5D0D65DA24AC1C7900F2A487 /* electricalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = electricalViewController.swift; sourceTree = "<group>"; };
-		5D0D65DE24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kamikitadaiStaViewController.swift; sourceTree = "<group>"; };
-		5D0D65E024AC1CC000F2A487 /* museumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = museumViewController.swift; sourceTree = "<group>"; };
-		5D0D65E224AC1CD100F2A487 /* shrineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shrineViewController.swift; sourceTree = "<group>"; };
-		5D0D65E424AC1CE000F2A487 /* tamakoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamakoViewController.swift; sourceTree = "<group>"; };
-		5D0D65E624AD649300F2A487 /* shoppingStreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoppingStreetViewController.swift; sourceTree = "<group>"; };
-		5D0D65E824AD64F600F2A487 /* shoppingMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoppingMallViewController.swift; sourceTree = "<group>"; };
-		5D0D65EA24AD79F800F2A487 /* cityHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityHallViewController.swift; sourceTree = "<group>"; };
-		5D69FA0A24C5670A005C16C7 /* configView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configView.swift; sourceTree = "<group>"; };
+		5D0D65D124A5896700F2A487 /* HigasiyamatosiStaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigasiyamatosiStaViewController.swift; sourceTree = "<group>"; };
+		5D0D65D324AAC94700F2A487 /* BotanicalGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicalGardenViewController.swift; sourceTree = "<group>"; };
+		5D0D65D624AAD4B700F2A487 /* BigboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigboxViewController.swift; sourceTree = "<group>"; };
+		5D0D65DA24AC1C7900F2A487 /* ElectricalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalViewController.swift; sourceTree = "<group>"; };
+		5D0D65DE24AC1CAE00F2A487 /* KamikitadaiStaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamikitadaiStaViewController.swift; sourceTree = "<group>"; };
+		5D0D65E024AC1CC000F2A487 /* MuseumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumViewController.swift; sourceTree = "<group>"; };
+		5D0D65E224AC1CD100F2A487 /* ShrineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrineViewController.swift; sourceTree = "<group>"; };
+		5D0D65E424AC1CE000F2A487 /* TamakoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamakoViewController.swift; sourceTree = "<group>"; };
+		5D0D65E624AD649300F2A487 /* ShoppingStreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStreetViewController.swift; sourceTree = "<group>"; };
+		5D0D65E824AD64F600F2A487 /* ShoppingMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingMallViewController.swift; sourceTree = "<group>"; };
+		5D0D65EA24AD79F800F2A487 /* CityHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHallViewController.swift; sourceTree = "<group>"; };
+		5D69FA0A24C5670A005C16C7 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		5DECD4E7249C737E00357385 /* raramagiSeiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raramagiSeiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DECD4EA249C737E00357385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DECD4EC249C737E00357385 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DECD4EE249C737E00357385 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		5DECD4EE249C737E00357385 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5DECD4F1249C737E00357385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DECD4F4249C737E00357385 /* raramagiSeiti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = raramagiSeiti.xcdatamodel; sourceTree = "<group>"; };
 		5DECD4F6249C738300357385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DECD4F9249C738300357385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DECD4FB249C738300357385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DECD503249C813700357385 /* seitiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seitiViewController.swift; sourceTree = "<group>"; };
+		5DECD503249C813700357385 /* SeitiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeitiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,15 +94,15 @@
 		5D0D65D824AC17E700F2A487 /* higasiyamato */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D65D124A5896700F2A487 /* higasiyamatosiStaViewController.swift */,
-				5D0D65D324AAC94700F2A487 /* botanicalGardenViewController.swift */,
-				5D0D65D624AAD4B700F2A487 /* bigboxViewController.swift */,
-				5D0D65DA24AC1C7900F2A487 /* electricalViewController.swift */,
-				5D0D65EA24AD79F800F2A487 /* cityHallViewController.swift */,
-				5D0D65DE24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift */,
-				5D0D65E024AC1CC000F2A487 /* museumViewController.swift */,
-				5D0D65E224AC1CD100F2A487 /* shrineViewController.swift */,
-				5D0D65E424AC1CE000F2A487 /* tamakoViewController.swift */,
+				5D0D65D124A5896700F2A487 /* HigasiyamatosiStaViewController.swift */,
+				5D0D65D324AAC94700F2A487 /* BotanicalGardenViewController.swift */,
+				5D0D65D624AAD4B700F2A487 /* BigboxViewController.swift */,
+				5D0D65DA24AC1C7900F2A487 /* ElectricalViewController.swift */,
+				5D0D65EA24AD79F800F2A487 /* CityHallViewController.swift */,
+				5D0D65DE24AC1CAE00F2A487 /* KamikitadaiStaViewController.swift */,
+				5D0D65E024AC1CC000F2A487 /* MuseumViewController.swift */,
+				5D0D65E224AC1CD100F2A487 /* ShrineViewController.swift */,
+				5D0D65E424AC1CE000F2A487 /* TamakoViewController.swift */,
 			);
 			path = higasiyamato;
 			sourceTree = "<group>";
@@ -110,8 +110,8 @@
 		5D0D65D924AC180600F2A487 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				5D0D65E624AD649300F2A487 /* shoppingStreetViewController.swift */,
-				5D0D65E824AD64F600F2A487 /* shoppingMallViewController.swift */,
+				5D0D65E624AD649300F2A487 /* ShoppingStreetViewController.swift */,
+				5D0D65E824AD64F600F2A487 /* ShoppingMallViewController.swift */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 			children = (
 				5DECD4EA249C737E00357385 /* AppDelegate.swift */,
 				5DECD4EC249C737E00357385 /* SceneDelegate.swift */,
-				5DECD503249C813700357385 /* seitiViewController.swift */,
-				5DECD4EE249C737E00357385 /* mapViewController.swift */,
-				5D69FA0A24C5670A005C16C7 /* configView.swift */,
+				5DECD503249C813700357385 /* SeitiViewController.swift */,
+				5DECD4EE249C737E00357385 /* MapViewController.swift */,
+				5D69FA0A24C5670A005C16C7 /* ConfigView.swift */,
 				5DECD4F0249C737E00357385 /* Main.storyboard */,
 				5D0D65D524AAD44500F2A487 /* seiti */,
 				5DECD4F6249C738300357385 /* Assets.xcassets */,
@@ -245,23 +245,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D65EB24AD79F800F2A487 /* cityHallViewController.swift in Sources */,
-				5D69FA0B24C5670A005C16C7 /* configView.swift in Sources */,
-				5D0D65E924AD64F600F2A487 /* shoppingMallViewController.swift in Sources */,
-				5D0D65DF24AC1CAE00F2A487 /* kamikitadaiStaViewController.swift in Sources */,
+				5D0D65EB24AD79F800F2A487 /* CityHallViewController.swift in Sources */,
+				5D69FA0B24C5670A005C16C7 /* ConfigView.swift in Sources */,
+				5D0D65E924AD64F600F2A487 /* ShoppingMallViewController.swift in Sources */,
+				5D0D65DF24AC1CAE00F2A487 /* KamikitadaiStaViewController.swift in Sources */,
 				5DECD4F5249C737E00357385 /* raramagiSeiti.xcdatamodeld in Sources */,
-				5D0D65E724AD649400F2A487 /* shoppingStreetViewController.swift in Sources */,
-				5DECD504249C813700357385 /* seitiViewController.swift in Sources */,
-				5DECD4EF249C737E00357385 /* mapViewController.swift in Sources */,
-				5D0D65E124AC1CC000F2A487 /* museumViewController.swift in Sources */,
-				5D0D65E524AC1CE000F2A487 /* tamakoViewController.swift in Sources */,
+				5D0D65E724AD649400F2A487 /* ShoppingStreetViewController.swift in Sources */,
+				5DECD504249C813700357385 /* SeitiViewController.swift in Sources */,
+				5DECD4EF249C737E00357385 /* MapViewController.swift in Sources */,
+				5D0D65E124AC1CC000F2A487 /* MuseumViewController.swift in Sources */,
+				5D0D65E524AC1CE000F2A487 /* TamakoViewController.swift in Sources */,
 				5DECD4EB249C737E00357385 /* AppDelegate.swift in Sources */,
-				5D0D65DB24AC1C7900F2A487 /* electricalViewController.swift in Sources */,
+				5D0D65DB24AC1C7900F2A487 /* ElectricalViewController.swift in Sources */,
 				5DECD4ED249C737E00357385 /* SceneDelegate.swift in Sources */,
-				5D0D65E324AC1CD100F2A487 /* shrineViewController.swift in Sources */,
-				5D0D65D424AAC94700F2A487 /* botanicalGardenViewController.swift in Sources */,
-				5D0D65D224A5896700F2A487 /* higasiyamatosiStaViewController.swift in Sources */,
-				5D0D65D724AAD4B700F2A487 /* bigboxViewController.swift in Sources */,
+				5D0D65E324AC1CD100F2A487 /* ShrineViewController.swift in Sources */,
+				5D0D65D424AAC94700F2A487 /* BotanicalGardenViewController.swift in Sources */,
+				5D0D65D224A5896700F2A487 /* HigasiyamatosiStaViewController.swift in Sources */,
+				5D0D65D724AAD4B700F2A487 /* BigboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

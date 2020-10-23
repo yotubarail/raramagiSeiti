@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bjj-Wa-hwB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bjj-Wa-hwB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--地図-->
         <scene sceneID="ivl-xK-aRt">
             <objects>
-                <viewController id="K9I-9Y-5Hc" customClass="mapViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K9I-9Y-5Hc" customClass="MapViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wpv-0Y-SqV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZh-gb-dA1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UKj-ya-SB1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="地図" image="mappin.and.ellipse" catalog="system" id="0wU-Dw-nSB"/>
                     <connections>
@@ -46,32 +48,32 @@
         <!--Higasiyamatosi Sta View Controller-->
         <scene sceneID="xXb-2Q-x24">
             <objects>
-                <viewController id="BJt-Ue-HAE" customClass="higasiyamatosiStaViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BJt-Ue-HAE" customClass="HigasiyamatosiStaViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-AB-mKK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="iRm-f0-D6C">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4W-PT-xu5">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="273.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QD-ZF-2vm">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="306" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="H7k-md-ub7"/>
                                         </constraints>
                                         <string key="text">西武拝島線の駅
 作中では東奏駅として登場</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="los-FM-hTf">
-                                        <rect key="frame" x="0.0" y="597.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="528.5" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="fch-Cn-F6s"/>
                                         </constraints>
@@ -81,13 +83,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulw-uc-3jp">
                                         <rect key="frame" x="0.0" y="638.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="CLx-jE-oci"/>
                                         </constraints>
                                         <string key="text">・12幕『カノホナピリカイ』
 ・イベントストーリー多数</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -97,14 +99,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4jG-CJ-Nam"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iRm-f0-D6C" firstAttribute="leading" secondItem="4jG-CJ-Nam" secondAttribute="leading" id="4JP-QX-FSR"/>
                             <constraint firstItem="iRm-f0-D6C" firstAttribute="bottom" secondItem="4jG-CJ-Nam" secondAttribute="bottom" id="CBV-7N-Eif"/>
                             <constraint firstItem="iRm-f0-D6C" firstAttribute="trailing" secondItem="4jG-CJ-Nam" secondAttribute="trailing" id="PJx-sy-cpw"/>
                             <constraint firstItem="iRm-f0-D6C" firstAttribute="top" secondItem="4jG-CJ-Nam" secondAttribute="top" id="klH-EI-Qa1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4jG-CJ-Nam"/>
                     </view>
                     <navigationItem key="navigationItem" id="0pW-8m-H2V"/>
                     <connections>
@@ -121,32 +123,32 @@
         <!--Botanical Garden View Controller-->
         <scene sceneID="nzn-uw-qxU">
             <objects>
-                <viewController id="Jbs-Y2-tEb" customClass="botanicalGardenViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jbs-Y2-tEb" customClass="BotanicalGardenViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5q-AE-Pfq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="chH-8c-LB7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-yR-JKf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="273.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Q-TS-U1u">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="306" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="Zk6-Tc-jwg"/>
                                         </constraints>
                                         <string key="text">薬用植物の収集や栽培を行っている
 神代結菜の救いに関連する場所で、ここで調律は終わるはずだったが...</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-v6-yGj">
-                                        <rect key="frame" x="0.0" y="597.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="528.5" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="Sec-Ob-hmG"/>
                                         </constraints>
@@ -156,11 +158,11 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="・5幕『ある晴れた日に』" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lr-fQ-r4U">
                                         <rect key="frame" x="0.0" y="638.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="HEo-Yu-zlX"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -170,14 +172,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aX1-vn-ZOG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="chH-8c-LB7" firstAttribute="top" secondItem="aX1-vn-ZOG" secondAttribute="top" id="6gL-pG-nRg"/>
                             <constraint firstItem="chH-8c-LB7" firstAttribute="centerX" secondItem="F5q-AE-Pfq" secondAttribute="centerX" id="Epu-CZ-pyZ"/>
                             <constraint firstItem="chH-8c-LB7" firstAttribute="leading" secondItem="aX1-vn-ZOG" secondAttribute="leading" id="lxx-qY-0AX"/>
                             <constraint firstItem="chH-8c-LB7" firstAttribute="bottom" secondItem="aX1-vn-ZOG" secondAttribute="bottom" id="nn3-1u-TQs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aX1-vn-ZOG"/>
                     </view>
                     <navigationItem key="navigationItem" id="b9y-wF-MBE"/>
                     <connections>
@@ -194,32 +196,32 @@
         <!--Bigbox View Controller-->
         <scene sceneID="dpf-o5-GnE">
             <objects>
-                <viewController id="vcI-zG-7TO" customClass="bigboxViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcI-zG-7TO" customClass="BigboxViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OsA-Eo-YrA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="aKW-HZ-OLB">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-nV-NiA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-Mm-uuJ">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="rc7-1P-tvu"/>
                                         </constraints>
                                         <string key="text">ゲームセンターやボウリング場などの複合施設
 器楽部みんなの遊び場</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPA-A4-6f8">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="0Qg-Zb-Cs1"/>
                                         </constraints>
@@ -229,13 +231,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i2-Wj-so1">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="sH6-SB-yuT"/>
                                         </constraints>
                                         <string key="text">・キズナストーリー
 ・イベントストーリー『雨に唄えば』</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -245,7 +247,8 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NAf-1g-dNM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aKW-HZ-OLB" firstAttribute="leading" secondItem="NAf-1g-dNM" secondAttribute="leading" id="7eR-lz-7lV"/>
                             <constraint firstAttribute="trailing" secondItem="aKW-HZ-OLB" secondAttribute="trailing" id="IKs-Yi-x7A"/>
@@ -254,7 +257,6 @@
                             <constraint firstItem="aKW-HZ-OLB" firstAttribute="width" secondItem="NAf-1g-dNM" secondAttribute="width" id="nJk-G6-ZB4"/>
                             <constraint firstItem="NAf-1g-dNM" firstAttribute="top" secondItem="aKW-HZ-OLB" secondAttribute="top" constant="3" id="pDa-Xe-TjW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NAf-1g-dNM"/>
                     </view>
                     <navigationItem key="navigationItem" id="7RM-wv-0ah"/>
                     <connections>
@@ -271,32 +273,32 @@
         <!--Electrical View Controller-->
         <scene sceneID="OYo-a0-dpX">
             <objects>
-                <viewController id="dkk-va-uVe" customClass="electricalViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dkk-va-uVe" customClass="ElectricalViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CAU-bo-umF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="lkS-Kp-2wV">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zs-fM-7Or">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCt-YK-cue">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="a31-iA-Uv7"/>
                                         </constraints>
                                         <string key="text">1993年まで使用された変電所
 器楽部全員で集まり、この前で映画撮影を行った</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-8L-VMT">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="ygS-kk-8Wt"/>
                                         </constraints>
@@ -306,11 +308,11 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="・イベントストーリー『シネマパラダイス』" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCa-Yb-Xe2">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="VHD-xJ-J85"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -320,7 +322,8 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vNo-uA-LMh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vNo-uA-LMh" firstAttribute="top" secondItem="lkS-Kp-2wV" secondAttribute="top" constant="3" id="3zq-c1-OcS"/>
                             <constraint firstAttribute="trailing" secondItem="lkS-Kp-2wV" secondAttribute="trailing" id="Cpg-Uq-8Cd"/>
@@ -329,7 +332,6 @@
                             <constraint firstItem="lkS-Kp-2wV" firstAttribute="trailing" secondItem="vNo-uA-LMh" secondAttribute="trailing" id="koZ-QL-eJZ"/>
                             <constraint firstItem="lkS-Kp-2wV" firstAttribute="leading" secondItem="vNo-uA-LMh" secondAttribute="leading" id="pef-S2-uZx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vNo-uA-LMh"/>
                     </view>
                     <navigationItem key="navigationItem" id="lH4-8m-FVV"/>
                     <connections>
@@ -346,32 +348,32 @@
         <!--City Hall View Controller-->
         <scene sceneID="8y6-8a-Qce">
             <objects>
-                <viewController id="hXG-oa-mDH" customClass="cityHallViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hXG-oa-mDH" customClass="CityHallViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rCU-wP-FNU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="dxl-yp-Tvc">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAU-j7-CRZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAk-Nm-g9A">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="Rfp-Zc-gAO"/>
                                         </constraints>
                                         <string key="text">東大和市の市役所
 正面口前の会話のシーンで登場</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ici-Mm-uPt">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="2cV-OR-6q6"/>
                                         </constraints>
@@ -381,11 +383,11 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="・奥村映誕生日限定ストーリー" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-3f-9UQ">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="5bP-GP-J7a"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -395,7 +397,8 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HOn-cu-ljy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dxl-yp-Tvc" firstAttribute="leading" secondItem="HOn-cu-ljy" secondAttribute="leading" id="1td-nm-CaM"/>
                             <constraint firstItem="dxl-yp-Tvc" firstAttribute="leading" secondItem="HOn-cu-ljy" secondAttribute="leading" id="3tj-UE-wa5"/>
@@ -404,7 +407,6 @@
                             <constraint firstItem="HOn-cu-ljy" firstAttribute="top" secondItem="dxl-yp-Tvc" secondAttribute="top" constant="3" id="RUq-cI-Ndo"/>
                             <constraint firstAttribute="trailing" secondItem="dxl-yp-Tvc" secondAttribute="trailing" id="hnx-1b-UgX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HOn-cu-ljy"/>
                     </view>
                     <navigationItem key="navigationItem" id="I7H-Q3-ha9"/>
                     <connections>
@@ -421,9 +423,9 @@
         <!--Kamikitadai Sta View Controller-->
         <scene sceneID="atu-sB-ySZ">
             <objects>
-                <viewController id="AOP-nS-lG8" customClass="kamikitadaiStaViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AOP-nS-lG8" customClass="KamikitadaiStaViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JZu-JH-VeB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-EE-iJP">
@@ -431,17 +433,17 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seiti05" translatesAutoresizingMaskIntoConstraints="NO" id="QnD-nO-aze">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="492.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-RP-3eN">
                                         <rect key="frame" x="0.0" y="525" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="5lH-TI-qMJ"/>
                                         </constraints>
                                         <string key="text">多摩モノレールの起点駅
 駅の前での会話のシーンで登場</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -456,13 +458,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwL-KJ-m1M">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="roR-fn-ZI2"/>
                                         </constraints>
                                         <string key="text">・11幕『ハッピーアンバースデイソング』
 ・イベントストーリー多数</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -472,7 +474,8 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7up-CW-e1z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="b9E-EE-iJP" firstAttribute="leading" secondItem="JZu-JH-VeB" secondAttribute="leading" id="8ce-V3-NVY"/>
                             <constraint firstItem="7up-CW-e1z" firstAttribute="top" secondItem="b9E-EE-iJP" secondAttribute="top" constant="3" id="E3D-9p-aGu"/>
@@ -481,7 +484,6 @@
                             <constraint firstItem="b9E-EE-iJP" firstAttribute="leading" secondItem="7up-CW-e1z" secondAttribute="leading" id="QoF-Wh-zy7"/>
                             <constraint firstItem="7up-CW-e1z" firstAttribute="bottom" secondItem="b9E-EE-iJP" secondAttribute="bottom" constant="2" id="vey-Ix-9CS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7up-CW-e1z"/>
                     </view>
                     <navigationItem key="navigationItem" id="W2c-ml-Z2k"/>
                     <connections>
@@ -498,32 +500,32 @@
         <!--Museum View Controller-->
         <scene sceneID="9Tk-eb-8zC">
             <objects>
-                <viewController id="4OO-Nl-TkZ" customClass="museumViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4OO-Nl-TkZ" customClass="MuseumViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W4K-Vc-eIq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-BX-GP3">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-Q6-O3L">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-VL-Ncg">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="tlm-CM-3WU"/>
                                         </constraints>
                                         <string key="text">狭山丘陵についての展示とプラネタリウムがある
 作中では器楽部の定期演奏会会場の祝祭劇場がある</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-jz-u0x">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="vjq-E4-o2p"/>
                                         </constraints>
@@ -533,13 +535,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-cx-Mzk">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="lhn-T3-thH"/>
                                         </constraints>
                                         <string key="text">・1幕『いばら姫』
 ・綾瀬凜誕生日限定ストーリー</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -549,14 +551,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vR4-Yw-2sG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vR4-Yw-2sG" firstAttribute="top" secondItem="RoH-BX-GP3" secondAttribute="top" constant="3" id="HOr-76-irq"/>
                             <constraint firstItem="RoH-BX-GP3" firstAttribute="leading" secondItem="vR4-Yw-2sG" secondAttribute="leading" id="HSG-vT-r5L"/>
                             <constraint firstItem="vR4-Yw-2sG" firstAttribute="bottom" secondItem="RoH-BX-GP3" secondAttribute="bottom" constant="2" id="HhC-pJ-dAe"/>
                             <constraint firstAttribute="trailing" secondItem="RoH-BX-GP3" secondAttribute="trailing" id="Xjd-1K-7EQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vR4-Yw-2sG"/>
                     </view>
                     <navigationItem key="navigationItem" id="71p-lx-wDd"/>
                     <connections>
@@ -573,32 +575,32 @@
         <!--Shrine View Controller-->
         <scene sceneID="Q6s-B9-gDm">
             <objects>
-                <viewController id="P2d-WK-ftr" customClass="shrineViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P2d-WK-ftr" customClass="ShrineViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ews-GI-Ggv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-EC-jUc">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="77S-3n-eVZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-yr-djO">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="vrd-Ox-GKF"/>
                                         </constraints>
                                         <string key="text">狭山自然公園内にある神社
 東奏大華火祭ではここから花火が見える</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIN-9v-5OT">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="wS8-kd-r0d"/>
                                         </constraints>
@@ -608,13 +610,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdV-Db-lih">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="Kbb-Fa-IVb"/>
                                         </constraints>
                                         <string key="text">・イベントストーリー『東奏大華火祭』
 ・ホニャららDREAM第4場『夏祭りの夜に』</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -624,14 +626,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UBv-OA-7zi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3Ip-EC-jUc" secondAttribute="trailing" id="LFr-cQ-n7u"/>
                             <constraint firstItem="UBv-OA-7zi" firstAttribute="top" secondItem="3Ip-EC-jUc" secondAttribute="top" constant="3" id="o9h-WU-arc"/>
                             <constraint firstItem="UBv-OA-7zi" firstAttribute="bottom" secondItem="3Ip-EC-jUc" secondAttribute="bottom" constant="2" id="tPO-Ys-1dQ"/>
                             <constraint firstItem="3Ip-EC-jUc" firstAttribute="leading" secondItem="UBv-OA-7zi" secondAttribute="leading" id="zv3-nI-hN1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="UBv-OA-7zi"/>
                     </view>
                     <navigationItem key="navigationItem" id="B21-We-qDv"/>
                     <connections>
@@ -648,32 +650,32 @@
         <!--Tamako View Controller-->
         <scene sceneID="5Ra-5k-Yei">
             <objects>
-                <viewController id="3Jw-gl-Y7i" customClass="tamakoViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Jw-gl-Y7i" customClass="TamakoViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vZB-SU-SGs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="No9-eC-OQg">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-3x-Ci6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EJ-EM-X3X">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="luC-OH-Yey"/>
                                         </constraints>
                                         <string key="text">1927年完成の人造湖
 『ららマジ』のシンボルと言っても良い場所</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPL-ux-by7">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="zx7-aA-qbb"/>
                                         </constraints>
@@ -683,13 +685,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-CI-h6a">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="u9f-ZU-SAc"/>
                                         </constraints>
                                         <string key="text">・1幕『いばら姫』
 ・イベントストーリー多数</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -699,14 +701,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uy2-tB-qqP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uy2-tB-qqP" firstAttribute="top" secondItem="No9-eC-OQg" secondAttribute="top" constant="3" id="Pur-Iv-cqW"/>
                             <constraint firstAttribute="trailing" secondItem="No9-eC-OQg" secondAttribute="trailing" id="vEd-Q6-VrP"/>
                             <constraint firstItem="No9-eC-OQg" firstAttribute="leading" secondItem="uy2-tB-qqP" secondAttribute="leading" id="vIC-c6-Zwt"/>
                             <constraint firstItem="uy2-tB-qqP" firstAttribute="bottom" secondItem="No9-eC-OQg" secondAttribute="bottom" constant="2" id="yiZ-MW-zQ6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uy2-tB-qqP"/>
                     </view>
                     <navigationItem key="navigationItem" id="XN7-WF-act"/>
                     <connections>
@@ -723,9 +725,9 @@
         <!--Shopping Street View Controller-->
         <scene sceneID="Hrk-Mh-MBt">
             <objects>
-                <viewController id="emj-Np-BO1" customClass="shoppingStreetViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="emj-Np-BO1" customClass="ShoppingStreetViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5rt-u5-17J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Lq-8Vw">
@@ -736,13 +738,13 @@
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-5I-yHX">
                                         <rect key="frame" x="0.0" y="525" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="i5v-9F-BK1"/>
                                         </constraints>
                                         <string key="text">音楽の街、下北沢の商店街
 器楽部員は東奏商店街で食品や日用品を買い揃えることが多いようだ</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -757,13 +759,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-4o-dit">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="L0r-OZ-9mD"/>
                                         </constraints>
                                         <string key="text">・ホーム画面
 ・イベントストーリー多数</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -773,14 +775,14 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FJT-yv-quw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FJT-yv-quw" firstAttribute="top" secondItem="rUB-Lq-8Vw" secondAttribute="top" constant="3" id="6cU-9L-kOe"/>
                             <constraint firstItem="FJT-yv-quw" firstAttribute="bottom" secondItem="rUB-Lq-8Vw" secondAttribute="bottom" constant="2" id="owM-69-pfh"/>
                             <constraint firstItem="rUB-Lq-8Vw" firstAttribute="leading" secondItem="FJT-yv-quw" secondAttribute="leading" id="qPQ-md-NUu"/>
                             <constraint firstAttribute="trailing" secondItem="rUB-Lq-8Vw" secondAttribute="trailing" id="sa2-ed-IFE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="FJT-yv-quw"/>
                     </view>
                     <navigationItem key="navigationItem" id="bwj-4q-zeB"/>
                     <connections>
@@ -797,32 +799,32 @@
         <!--Shopping Mall View Controller-->
         <scene sceneID="8Ro-eK-PlS">
             <objects>
-                <viewController id="jWR-Dd-Iy5" customClass="shoppingMallViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jWR-Dd-Iy5" customClass="ShoppingMallViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qSe-e9-eQh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="mXx-su-nHp">
                                 <rect key="frame" x="0.0" y="85" width="414" height="726"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fsK-Db-HGE">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="274.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-eD-xAx">
-                                        <rect key="frame" x="0.0" y="458.5" width="414" height="73.5"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73.5" id="zeP-Ht-qRB"/>
                                         </constraints>
                                         <string key="text">複合商業施設
 器楽部員は雑貨や洋服を買いに来る</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主な登場ストーリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd1-er-z6R">
-                                        <rect key="frame" x="0.0" y="598.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="530" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="f1D-X4-pU7"/>
                                         </constraints>
@@ -832,13 +834,13 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-bB-1oM">
                                         <rect key="frame" x="0.0" y="639.5" width="414" height="86.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="86.5" id="EW0-nz-jXb"/>
                                         </constraints>
                                         <string key="text">・イベントストーリー『東奏マーチングパレード』
 ・卯月幸誕生日限定ストーリー</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -848,7 +850,8 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rt4-MQ-jV8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mXx-su-nHp" firstAttribute="leading" secondItem="qSe-e9-eQh" secondAttribute="leading" id="Buf-JY-9ol"/>
                             <constraint firstItem="Rt4-MQ-jV8" firstAttribute="top" secondItem="mXx-su-nHp" secondAttribute="top" constant="3" id="Ofq-6M-Cjf"/>
@@ -856,7 +859,6 @@
                             <constraint firstItem="Rt4-MQ-jV8" firstAttribute="bottom" secondItem="mXx-su-nHp" secondAttribute="bottom" constant="2" id="ff8-eg-BVe"/>
                             <constraint firstItem="mXx-su-nHp" firstAttribute="leading" secondItem="Rt4-MQ-jV8" secondAttribute="leading" id="pNJ-bD-qUg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Rt4-MQ-jV8"/>
                     </view>
                     <navigationItem key="navigationItem" id="w3d-h0-QPw"/>
                     <connections>
@@ -894,7 +896,7 @@
                 <navigationController id="cOT-MX-Fht" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="一覧" image="list.bullet" catalog="system" id="NQK-yI-98Y"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XZO-gH-zJ7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -908,15 +910,15 @@
         <!--Seiti View Controller-->
         <scene sceneID="K24-qH-Xxk">
             <objects>
-                <viewController id="CkH-f9-jwi" customClass="seitiViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CkH-f9-jwi" customClass="SeitiViewController" customModule="raramagiSeiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iff-5t-FU4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3qJ-3z-3Is">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="600" height="429"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="seitiCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="seitiCell" id="oFv-x1-00R">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
@@ -929,8 +931,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="daY-qv-dgB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="zjc-GF-aQL"/>
                     <navigationItem key="navigationItem" id="yiK-ft-sWV">
@@ -979,5 +981,20 @@
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="seiti05" width="600" height="600"/>
         <image name="seiti10" width="600" height="600"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
